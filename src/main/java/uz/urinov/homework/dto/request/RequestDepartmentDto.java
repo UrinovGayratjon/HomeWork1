@@ -15,10 +15,10 @@ import uz.urinov.homework.entity.Company;
 @Builder
 public class RequestDepartmentDto {
 
-    @NotNull
+    @NotNull(message = "name error")
     private String name;
 
-    @NotNull
+    @NotNull(message = "companyId Error")
     private Integer companyId;
 
 }

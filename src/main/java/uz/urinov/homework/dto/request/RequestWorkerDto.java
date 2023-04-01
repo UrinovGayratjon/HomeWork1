@@ -12,19 +12,19 @@ import lombok.NoArgsConstructor;
 @Builder
 public class RequestWorkerDto {
 
-    @NotNull
+    @NotNull(message = "Name error")
     private String name;
 
-    @NotNull
+    @NotNull(message = "phoneNumber error")
     private String phoneNumber;
 
-    @NotNull
+    @NotNull(message = "street error")
     private String street;
 
-    @NotNull
+    @NotNull(message = "homeNumber error")
     private Integer homeNumber;
 
-    @NotNull
+    @NotNull(message = "departmentId error")
     private Integer departmentId;
 
 

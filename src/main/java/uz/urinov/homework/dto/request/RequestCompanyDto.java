@@ -10,15 +10,15 @@ import uz.urinov.homework.service.CompanyService;
 @Data
 public class RequestCompanyDto {
 
-    @NotNull
+    @NotNull(message = "Corp name error")
     private String corpName;
 
-    @NotNull
+    @NotNull(message = "directorName  error")
     private String directorName;
 
-    @NotNull
+    @NotNull(message = "street  error")
     private String street;
 
-    @NotNull
+    @NotNull(message = "homeNumber  error")
     private Integer homeNumber;
 }
